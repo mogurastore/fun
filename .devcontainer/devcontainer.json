@@ -1,0 +1,5 @@
+// See https://containers.dev/implementors/json_reference/ for configuration reference
+{
+  "image": "node:lts",
+  "remoteUser": "node"
+}
