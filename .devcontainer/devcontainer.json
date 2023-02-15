@@ -1,5 +1,10 @@
 // See https://containers.dev/implementors/json_reference/ for configuration reference
 {
   "image": "node:lts",
+  "customizations": {
+    "vscode": {
+      "extensions": ["astro-build.astro-vscode"]
+    }
+  },
   "remoteUser": "node"
 }
