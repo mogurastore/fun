@@ -21,11 +21,9 @@ const posts = (await getCollection("blog")).sort(
         padding: unset;
       }
       ul li {
-        display: flex;
+        margin-bottom: 1rem;
       }
       ul li :global(time) {
-        flex: 0 0 130px;
-        font-style: italic;
         color: #595959;
       }
       ul li a:visited {
@@ -42,6 +40,7 @@ const posts = (await getCollection("blog")).sort(
             posts.map((post) => (
               <li>
                 <FormattedDate date={post.data.pubDate} />
+                <br />
                 <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
               </li>
             ))
