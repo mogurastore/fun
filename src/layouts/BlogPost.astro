@@ -42,6 +42,12 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
             </div>
           )
         }
+        <div>
+          <a
+            href={`https://twitter.com/share?url=${Astro.url}&text=${title}`}
+            target="_blank">Tweet</a
+          >
+        </div>
         <hr />
         <slot />
       </article>
