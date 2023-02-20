@@ -3,7 +3,7 @@
   "image": "node:lts",
   "customizations": {
     "vscode": {
-      "extensions": ["astro-build.astro-vscode"]
+      "extensions": ["astro-build.astro-vscode", "unifiedjs.vscode-mdx"]
     }
   },
   "remoteUser": "node"
